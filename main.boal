@@ -1,0 +1,11 @@
+ce main {
+
+    attr auth = valid;
+
+    ci process {
+        out = "BO42 Working";
+    }
+
+    verify auth -> out;
+
+}

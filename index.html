@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>BO42 Runner</h3>
+
+<script src="boal.js"></script>
+
+<script>
+async function loadBOAL() {
+    const res = await fetch('main.boal');
+    const code = await res.text();
+
+    const result = runBOAL(code);
+    console.log("BOAL Output:", result);
+}
+
+loadBOAL();
+</script>
+
+</body>
+</html>
