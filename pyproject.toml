@@ -2,50 +2,54 @@
 requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
+
 [project]
 name = "boal-bo42"
 version = "1.0.0"
 description = "BO42 Execution Kernel / BOAL runtime system"
 readme = "README.md"
 requires-python = ">=3.9"
-license = { file = "LICENSE" }
+license = {text = "Apache-2.0"}
 
 authors = [
-  { name = "Anointing Joseph E.G Mayami", email = "officialjoemayami@gmail.com" },
-  { name = "High Intelligence Security", email = "support@highintelligencesecurity.com" }
+    { name = "Anointing Joseph E.G Mayami", email = "officialjoemayami@gmail.com" },
+    { name = "High Intelligence Security" }
 ]
 
-keywords = ["bo42", "boal", "runtime", "kernel"]
+keywords = ["bo42", "boal", "interpreter", "runtime", "execution-kernel"]
 
 classifiers = [
-  "Programming Language :: Python :: 3",
-  "Operating System :: OS Independent",
-  "Intended Audience :: Developers"
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.14.4",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Interpreters",
+    "License :: OSI Approved :: Apache Software License"
 ]
 
 dependencies = []
 
+
 [project.urls]
-Homepage = "https://github.com/bo42/boal-bo42"
-Issues = "https://github.com/bo42/boal-bo42/issues"
+Homepage = "https://github.com/officialjoemayami/BOAL-BO42"
+Issues = "https://github.com/officialjoemayami/BOAL-BO42/issues"
+Documentation = "https://github.com/officialjoemayami/BOAL-BO42/blob/main/README.md"
 
-[project.optional-dependencies]
-dev = [
-  "pytest",
-  "black",
-  "flake8"
-]
 
-# ✅ THIS is the ONLY setuptools config you should keep
+# =========================
+# SETUPTOOLS CONFIGURATION
+# =========================
 [tool.setuptools]
-packages = ["bo42", "boal", "core", "hni", "security"]
 
-[tool.setuptools.package-data]
-bo42 = ["*"]
-boal = ["*"]
-core = ["*"]
-hni = ["*"]
-security = ["*"]
+# IMPORTANT: your code lives inside ./BO42
+package-dir = {"" = "."}
+
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["BO42*"]
+exclude = ["tests*"]
+
 
 [project.scripts]
-bo42-run = "bo42.cli:main"
+bo42-run = "run:main"
