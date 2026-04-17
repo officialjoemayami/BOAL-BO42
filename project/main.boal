@@ -1,0 +1,14 @@
+ce main
+
+attr mode = valid
+attr user = verified
+
+ci process {
+    name = "running from boal";
+    status = "active";
+}
+
+ci compute {
+    task = "execute";
+    result = "ok";
+}
