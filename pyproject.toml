@@ -1,77 +1,51 @@
 [build-system]
-# The build system section is essential for building the package.
-# 'setuptools' and 'wheel' are essential for packaging and distribution.
-requires = ["setuptools>=42", "wheel"]
+requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-# Project metadata: Name, Version, Description, License, etc.
 name = "boal-bo42"
 version = "1.0.0"
 description = "BO42 Execution Kernel / BOAL runtime system"
-authors = [
-    {name = "Anointing Joseph E.G Mayami", email = "officialjoemayami@gmail.com"},
-    {name = "High Intelligence Security", email = "contact@his.com"}
-]
 readme = "README.md"
-license = {file = "LICENSE"}
-dependencies = []  # Add runtime dependencies here
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
 
-# Specify the required Python version for the package.
-python_requires = ">=3.9"
+authors = [
+  { name = "Anointing Joseph E.G Mayami", email = "officialjoemayami@gmail.com" },
+  { name = "High Intelligence Security", email = "support@highintelligencesecurity.com" }
+]
 
-# Optional dependencies (for development, testing, etc.)
-# You can define different "extra" sets of dependencies that can be installed using `pip install <package>[extra]`
+keywords = ["bo42", "boal", "runtime", "kernel"]
+
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+  "Intended Audience :: Developers"
+]
+
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/bo42/boal-bo42"
+Issues = "https://github.com/bo42/boal-bo42/issues"
+
 [project.optional-dependencies]
 dev = [
-    "pytest>=6.0",      # For running tests
-    "black>=21.9b0",    # Code formatter
-    "flake8>=3.9.0",    # Linter
-    "tox>=3.24.5"       # For testing across environments
-]
-docs = [
-    "sphinx>=4.0.0",    # Documentation generator
-    "sphinx_rtd_theme"  # ReadTheDocs theme for Sphinx
+  "pytest",
+  "black",
+  "flake8"
 ]
 
-# Additional metadata (optional, but can be useful for packaging)
-homepage = "https://github.com/bo42/boal-bo42"
-readme_content_type = "text/markdown"
-keywords = ["execution", "kernel", "runtime", "BO42", "BOAL"]
-classifiers = [
-    "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.9",
-    "License :: OSI Approved :: MIT License",
-    "Operating System :: OS Independent",
-    "Intended Audience :: Developers",
-    "Topic :: Software Development :: Build Tools"
-]
-
-# Project-specific URLs (for project page, source code, etc.)
-urls = {
-    "Homepage" = "https://github.com/bo42/boal-bo42",
-    "Bug Tracker" = "https://github.com/bo42/boal-bo42/issues",
-    "Documentation" = "https://bo42.readthedocs.io"
-}
-
+# ✅ THIS is the ONLY setuptools config you should keep
 [tool.setuptools]
-# Add any extra setuptools configurations here if needed
-packages = ["bo42", "boal"]
-include_package_data = true
+packages = ["bo42", "boal", "core", "hni", "security"]
 
 [tool.setuptools.package-data]
-# If you have non-Python files to include, you can specify them here
-# Example: include all `.txt` files in the 'data' folder.
-"bo42" = ["data/*.txt"]
-"boal" = ["assets/*"]
+bo42 = ["*"]
+boal = ["*"]
+core = ["*"]
+hni = ["*"]
+security = ["*"]
 
-# Optional: Custom entry points (for command-line scripts, for example)
-[tool.setuptools.entry-points]
-console_scripts = [
-    "bo42-run = bo42.cli:main",   # Example: creates a CLI command "bo42-run" linked to `bo42.cli.main`
-]
-
-# Metadata for version control (can help for auto-versioning)
-[tool.setuptools_scm]
-version_scheme = "post-release"
-write_to = "bo42/version.py"  # Output version in this file
+[project.scripts]
+bo42-run = "bo42.cli:main"
