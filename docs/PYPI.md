@@ -1,9 +1,3 @@
-Here is an **Enterprise V2 PyPI-optimized README for BOAL / BO42 ecosystem** with proper branding, SEO structure, shields, and onboarding flow.
-
-You can paste this directly as your `README.md`.
-
----
-
 # 🚀 BOAL / BO42 Enterprise Runtime System
 
 ![BOAL](https://img.shields.io/badge/BOAL-Execution%20Kernel-blueviolet?style=for-the-badge)

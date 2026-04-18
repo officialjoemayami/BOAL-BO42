@@ -193,3 +193,8 @@ We welcome:
 ## 📬 Collaboration
 
 For enterprise collaboration, research integration, or partnerships, please contact the official project maintainers.
+
+## 🌐 Documentation
+
+📘 Official Docs:  
+[![Docs](https://img.shields.io/badge/docs-BOAL%20BO42-blue)](https://officialjoemayami.github.io/BOAL-BO42/)
