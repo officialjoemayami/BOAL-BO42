@@ -5,14 +5,14 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "boal-bo42"
-version = "1.0.0"
+version = "1.1.0"
 description = "BO42 Execution Kernel / BOAL runtime system"
-readme = "README.md"
+readme = "docs/PYPI.md"
 requires-python = ">=3.9"
 license = {text = "Apache-2.0"}
 
 authors = [
-    { name = "Anointing Joseph E.G Mayami", email = "officialjoemayami@gmail.com" },
+    { name = "King Anointing Joseph Mayami", email = "officialjoemayami@gmail.com" },
     { name = "High Intelligence Security" }
 ]
 
@@ -46,9 +46,9 @@ package-dir = {"" = "."}
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["BO42*"]
+include = ["boal*", "bo42*"]
 exclude = ["tests*"]
 
 
 [project.scripts]
-bo42-run = "run:main"
+boal = "boal.cli:main"

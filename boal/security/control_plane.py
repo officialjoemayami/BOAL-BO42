@@ -2,10 +2,10 @@ import logging
 from dataclasses import dataclass
 from typing import Any, Dict, List
 
-from hni.network import Network
-from hni.hub import Hub
-from hni.interface import Interface
-from security.guard import Guard
+from boal.hni.network import Network
+from boal.hni.hub import Hub
+from boal.hni.interface import Interface
+from boal.security.guard import Guard
 
 
 # ---------------- LOGGING ----------------

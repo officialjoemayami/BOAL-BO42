@@ -2,7 +2,7 @@ import logging
 from dataclasses import dataclass
 from typing import Any, Dict, Optional
 
-from core.trace import BO42TraceEngine
+from boal.core.trace import BO42TraceEngine
 
 
 # ---------------- LOGGING ----------------

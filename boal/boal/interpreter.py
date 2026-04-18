@@ -2,15 +2,15 @@ import os
 import logging
 import inspect
 
-from core.lexer import BOALLexer
-from core.parser import BOALParser
+from boal.core.lexer import BOALLexer
+from boal.core.parser import BOALParser
 
-from security.control_plane import ControlPlane
-from security.guard import Guard
+from boal.security.control_plane import ControlPlane
+from boal.security.guard import Guard
 
-from hni.hub import Hub
-from hni.network import Network
-from hni.interface import Interface
+from boal.hni.hub import Hub
+from boal.hni.network import Network
+from boal.hni.interface import Interface
 
 
 logger = logging.getLogger("BO42-INTERPRETER")

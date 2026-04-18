@@ -1,6 +1,6 @@
 import logging
-from core.ast import Program, CIBlock, Statement, BO42ASTError
-from core.trace import BO42TraceEngine
+from boal.core.ast import Program, CIBlock, Statement, BO42ASTError
+from boal.core.trace import BO42TraceEngine
 
 logger = logging.getLogger("BO42-PARSER")
 

@@ -2,7 +2,7 @@ from dataclasses import dataclass, field
 from typing import List, Dict, Optional
 import logging
 
-from core.trace import BO42TraceEngine
+from boal.core.trace import BO42TraceEngine
 
 logger = logging.getLogger("BO42-AST")
 logging.basicConfig(level=logging.INFO)

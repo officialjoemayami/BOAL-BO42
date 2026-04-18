@@ -1,10 +1,10 @@
 import logging
 from dataclasses import dataclass
 
-from hni.hub import Hub
-from hni.network import Network
-from hni.interface import Interface
-from core.trace import BO42TraceEngine
+from boal.hni.hub import Hub
+from boal.hni.network import Network
+from boal.hni.interface import Interface
+from boal.core.trace import BO42TraceEngine
 
 
 logger = logging.getLogger("BO42-RUNTIME")

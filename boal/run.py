@@ -1,8 +1,8 @@
 import logging
 import sys
 
-from boal.interpreter import BOALInterpreter
-from core.trace import BO42TraceEngine
+from boal.boal.interpreter import BOALInterpreter
+from boal.core.trace import BO42TraceEngine
 
 
 logging.basicConfig(level=logging.INFO)
