@@ -87,16 +87,6 @@ pip install boal-bo42
 ---
 
 ## ▶️ Quick Start
-
-```python
-from boal.interpreter import BOALInterpreter
-
-engine = BOALInterpreter()
-
-result = engine.run_file("programs/main.boal")
-print(result)
-```
-
 ---
 
 ## 🖥️ BOAL CLI (v2)
@@ -120,13 +110,21 @@ boal run filename.boal --trace
 ## 📁 Example BO42 Program
 
 ```bo42
-ce {
-    ci compute {
-        x = 10;
-        y = 20;
-        result = x + y;
+ce main
+
+attr mode = valid
+attr user = verified
+
+    ci process {
+        name = "running from boal";
+        status = "active";
     }
-}
+
+    ci compute {
+        task = "execute";
+        result = "ok";
+    }
+
 ```
 
 ---
