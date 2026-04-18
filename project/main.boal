@@ -12,3 +12,8 @@ ci compute {
     task = "execute";
     result = "ok";
 }
+
+
+ ci output {
+        message = "Halleluyah!";
+    }
