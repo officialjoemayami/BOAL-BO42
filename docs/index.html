@@ -50,10 +50,12 @@
       padding: 30px;
     }
 
-    .card {
-      border: none;
+    .hero {
+      background: white;
+      padding: 30px;
       border-radius: 12px;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      margin-bottom: 20px;
     }
 
     pre {
@@ -73,6 +75,10 @@
       font-size: 12px;
       margin-right: 5px;
     }
+
+    h2 {
+      margin-top: 20px;
+    }
   </style>
 </head>
 
@@ -80,7 +86,7 @@
 
 <!-- SIDEBAR -->
 <div class="sidebar">
-  <h5 class="px-3 fw-bold">BOAL Docs</h5>
+  <h5 class="px-3 fw-bold">BOAL Docs v3</h5>
   <a href="#home">🏠 Home</a>
   <a href="#intro">📘 Intro</a>
   <a href="#get-started">🚀 Get Started</a>
@@ -91,129 +97,119 @@
 <!-- CONTENT -->
 <div class="content">
 
-<!-- ================= HOME ================= -->
-<section id="home" class="card p-4 mb-4">
+<!-- HOME -->
+<section id="home" class="hero">
   <h1 class="fw-bold">🚀 BOAL / BO42 Enterprise Runtime System</h1>
+  <p class="text-muted">AI Execution Kernel • Secure Runtime • BO42 Language Engine • HIS Framework</p>
 
-  <div class="mt-2">
+  <div class="mt-3">
     <span class="tag">BO42 Language</span>
     <span class="tag">Execution Kernel</span>
-    <span class="tag">HIS Framework</span>
     <span class="tag">AI Runtime</span>
+    <span class="tag">Trace Engine</span>
   </div>
 
   <hr>
 
   <p>
     BOAL is an enterprise-grade execution runtime system designed for secure computational orchestration.
-    BO42 is the domain-specific language (DSL) powering BOAL execution logic, control flow, and AI-assisted runtime interpretation.
+    It powers the BO42 language with deterministic execution, control plane governance, and AI-aware runtime tracing.
   </p>
 
   <p>
-    Together, they form a secure execution intelligence stack developed under <b>High Intelligence Security (HIS)</b>.
+    Developed under <b>High Intelligence Security (HIS)</b>, BOAL represents a secure intelligence infrastructure for next-generation computation systems.
   </p>
-
-  <h5>🧠 Architecture</h5>
-  <ul>
-    <li><b>BOAL</b> → Execution Kernel (Runtime Engine)</li>
-    <li><b>BO42</b> → Language Layer (DSL System)</li>
-    <li><b>HNI Stack</b> → Security + Network + Interface Control</li>
-    <li><b>Guard System</b> → Runtime Firewall & Integrity Protection</li>
-    <li><b>Trace Engine</b> → Execution Observability Layer</li>
-  </ul>
-
-  <h5>🏢 High Intelligence Security (HIS)</h5>
-  <p>
-    HIS is a pioneering AI security organization focused on:
-  </p>
-  <ul>
-    <li>AI-driven security systems</li>
-    <li>Global economic stability frameworks</li>
-    <li>Adaptive threat intelligence</li>
-    <li>Secure runtime governance systems</li>
-  </ul>
-
-  <p><b>Mission:</b> Transform global intelligence systems through secure AI execution infrastructure.</p>
 </section>
 
-<!-- ================= INTRO ================= -->
-<section id="intro" class="card p-4 mb-4">
-  <h2>📘 BO42 Introduction</h2>
+<!-- INTRO -->
+<section id="intro" class="hero">
+  <h2>📘 Introduction to BO42</h2>
 
   <p>
-    BO42 is a structured execution programming language designed for deterministic computation,
-    secure pipelines, and controlled AI execution flows.
+    BO42 is a domain-specific execution language (DSL) designed for structured AI computation and secure runtime control.
   </p>
 
-  <h5>Key Concepts</h5>
+  <h5>BO42 Capabilities</h5>
   <ul>
-    <li>CI (Computational Instructions)</li>
-    <li>ATTR-based execution control</li>
-    <li>Secure deterministic runtime model</li>
-    <li>Traceable execution graph</li>
+    <li>Secure structured computation</li>
+    <li>CI (Computational Instruction) execution model</li>
+    <li>Attribute-based execution (ATTR layer)</li>
+    <li>Deterministic runtime behavior</li>
   </ul>
+
+  <h5>BOAL Runtime</h5>
+  <p>
+    BOAL executes BO42 programs through a full pipeline:
+  </p>
+
+  <pre>
+Lexer → Parser → AST → Control Plane → Execution Engine → Trace System
+  </pre>
 </section>
 
-<!-- ================= GET STARTED ================= -->
-<section id="get-started" class="card p-4 mb-4">
+<!-- GET STARTED -->
+<section id="get-started" class="hero">
   <h2>🚀 Get Started</h2>
 
-  <p>Install BOAL runtime:</p>
+  <h5>Install BOAL</h5>
   <pre>pip install boal-bo42</pre>
 
-  <p>Run a BO42 program:</p>
+  <h5>Run a BO42 file</h5>
   <pre>boal run main.bo42</pre>
 
-  <p>Run with trace debugging:</p>
+  <h5>Run with trace debugging</h5>
   <pre>boal run main.bo42 --trace</pre>
 </section>
 
-<!-- ================= SYNTAX ================= -->
-<section id="syntax" class="card p-4 mb-4">
-  <h2>🧠 BO42 Syntax Guide</h2>
+<!-- SYNTAX -->
+<section id="syntax" class="hero">
+  <h2>🧠 BO42 Syntax</h2>
 
-  <p>BO42 uses a structured block execution model:</p>
+  <p>BO42 uses structured execution blocks:</p>
 
   <h5>Basic Structure</h5>
   <pre>
 ce {
     ci compute {
-        attr = valid;
-        result = 10;
+        attr x = valid;
+        attr y = verified;
     }
 }
   </pre>
 
-  <h5>Rules</h5>
+  <h5>Key Components</h5>
   <ul>
-    <li><b>ce</b> → Execution container</li>
-    <li><b>ci</b> → Computation block</li>
-    <li><b>attr</b> → Authorization layer</li>
-    <li><b>;</b> → Statement terminator</li>
+    <li><b>ce</b> → Control Execution root block</li>
+    <li><b>ci</b> → Computational Instruction block</li>
+    <li><b>attr</b> → Execution attribute layer</li>
+    <li><b>verify</b> → Security validation instruction</li>
   </ul>
 </section>
 
-<!-- ================= OUTPUT ================= -->
-<section id="output" class="card p-4 mb-4">
-  <h2>📤 Output Example</h2>
+<!-- OUTPUT -->
+<section id="output" class="hero">
+  <h2>📤 Output Execution Example</h2>
 
-  <p>BO42 Hello World Equivalent:</p>
+  <p>BO42 programs execute deterministically through BOAL runtime.</p>
 
+  <h5>Hello World Equivalent</h5>
+  <p>BO42 does not use traditional print statements. Instead, CI execution outputs controlled responses.</p>
+
+  <h5>Example Program</h5>
   <pre>
 ce {
-    ci compute {
-        print "Halleluyah!";
+    ci output {
+        message = "Halleluyah!";
     }
 }
   </pre>
 
-  <h5>Execution Result</h5>
+  <h5>Expected Output</h5>
   <pre>
 Halleluyah!
   </pre>
 </section>
 
-<!-- FOOTER -->
 <footer class="text-center text-muted mt-4">
   <p>© BOAL Runtime System • High Intelligence Security (HIS)</p>
 </footer>
