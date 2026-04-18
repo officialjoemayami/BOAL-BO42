@@ -166,14 +166,9 @@ We welcome contributors, researchers, and infrastructure partners.
 
 ## ❤️ Support & Donations
 
-To support development:
+For contribution details, contact project maintainers via official channels.
 
-**Bank Transfer Details**
-
-* Account Name: *Anointing Joseph Mayami*
-* Bank: *Stanbic IBTC Bank*
-* Account Number: **0012409278**
-* SWIFT Code: **SBICNGLX**
+> ⚠️ Sensitive financial details are intentionally not publicly exposed in this repository for security reasons.
 
 **Contributing Partner of Trustee**
 

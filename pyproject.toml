@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "boal-bo42"
-version = "1.1.0"
+version = "1.1.1"
 description = "BO42 Execution Kernel / BOAL runtime system"
 readme = "docs/PYPI.md"
 requires-python = ">=3.9"
@@ -32,7 +32,7 @@ dependencies = []
 [project.urls]
 Homepage = "https://github.com/officialjoemayami/BOAL-BO42"
 Issues = "https://github.com/officialjoemayami/BOAL-BO42/issues"
-Documentation = "https://github.com/officialjoemayami/BOAL-BO42/blob/main/README.md"
+Documentation = "https://officialjoemayami.github.io/BOAL-BO42/"
 
 
 # =========================
