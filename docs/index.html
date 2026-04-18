@@ -1,220 +1,202 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>BOAL Runtime System | BO42 Execution Kernel</title>
-
-  <!-- SEO -->
-  <meta name="description" content="BOAL Execution Kernel - Enterprise runtime system for BO42 language, AI execution, deterministic computation, and secure control plane architecture.">
-  <meta name="keywords" content="BOAL, BO42, AI runtime, execution kernel, interpreter, HIS, deterministic AI, control plane, Python runtime">
-  <meta name="author" content="High Intelligence Security (HIS)">
-
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-
-  <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      background: #f8f9fa;
-    }
-
-    .sidebar {
-      height: 100vh;
-      position: fixed;
-      background: #ffffff;
-      border-right: 1px solid #e5e5e5;
-      width: 260px;
-      padding-top: 20px;
-    }
-
-    .sidebar a {
-      display: block;
-      padding: 12px 20px;
-      color: #333;
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    .sidebar a:hover {
-      background: #f1f3f4;
-      border-radius: 8px;
-    }
-
-    .content {
-      margin-left: 280px;
-      padding: 30px;
-    }
-
-    .hero {
-      background: white;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-      margin-bottom: 20px;
-    }
-
-    pre {
-      background: #0f172a;
-      color: #fff;
-      padding: 15px;
-      border-radius: 10px;
-      overflow-x: auto;
-    }
-
-    .tag {
-      display: inline-block;
-      background: #e8f0fe;
-      color: #1a73e8;
-      padding: 4px 10px;
-      border-radius: 20px;
-      font-size: 12px;
-      margin-right: 5px;
-    }
-
-    h2 {
-      margin-top: 20px;
-    }
-  </style>
-</head>
-
-<body>
-
-<!-- SIDEBAR -->
-<div class="sidebar">
-  <h5 class="px-3 fw-bold">BOAL Docs v3</h5>
-  <a href="#home">🏠 Home</a>
-  <a href="#intro">📘 Intro</a>
-  <a href="#get-started">🚀 Get Started</a>
-  <a href="#syntax">🧠 Syntax</a>
-  <a href="#output">📤 Output</a>
-</div>
-
-<!-- CONTENT -->
-<div class="content">
-
 <!-- HOME -->
 <section id="home" class="hero">
-  <h1 class="fw-bold">🚀 BOAL / BO42 Enterprise Runtime System</h1>
-  <p class="text-muted">AI Execution Kernel • Secure Runtime • BO42 Language Engine • HIS Framework</p>
 
-  <div class="mt-3">
-    <span class="tag">BO42 Language</span>
-    <span class="tag">Execution Kernel</span>
-    <span class="tag">AI Runtime</span>
-    <span class="tag">Trace Engine</span>
-  </div>
+  <h1 class="fw-bold">🧠 BOAL HOME (BO42 Language Runtime System)</h1>
+
+  <p class="text-muted">
+    ⚡ BOAL • BO42 • HIS Ecosystem — Secure AI Execution Runtime Infrastructure
+  </p>
 
   <hr>
 
   <p>
-    BOAL is an enterprise-grade execution runtime system designed for secure computational orchestration.
-    It powers the BO42 language with deterministic execution, control plane governance, and AI-aware runtime tracing.
+    BOAL is a next-generation execution runtime system designed to power the BO42 programming language,
+    an advanced structured execution language built for secure computation, AI-driven control flow,
+    and deterministic runtime execution.
   </p>
 
   <p>
-    Developed under <b>High Intelligence Security (HIS)</b>, BOAL represents a secure intelligence infrastructure for next-generation computation systems.
-  </p>
-</section>
-
-<!-- INTRO -->
-<section id="intro" class="hero">
-  <h2>📘 Introduction to BO42</h2>
-
-  <p>
-    BO42 is a domain-specific execution language (DSL) designed for structured AI computation and secure runtime control.
+    BOAL is developed under <b>High Intelligence Security (HIS)</b> — a pioneering AI research and security organization
+    focused on global intelligence systems, economic stability, and secure computational frameworks.
   </p>
 
-  <h5>BO42 Capabilities</h5>
+  <hr>
+
+  <h2>🌍 Project Overview</h2>
+
+  <h5>🔷 BO42 (The Language)</h5>
+  <p>BO42 is a domain-specific execution language (DSL) designed for:</p>
   <ul>
     <li>Secure structured computation</li>
-    <li>CI (Computational Instruction) execution model</li>
-    <li>Attribute-based execution (ATTR layer)</li>
-    <li>Deterministic runtime behavior</li>
+    <li>Controlled AI execution pipelines</li>
+    <li>Attribute-driven execution (ATTR layer)</li>
+    <li>CI-based modular logic execution</li>
+    <li>Deterministic runtime tracing</li>
   </ul>
 
-  <h5>BOAL Runtime</h5>
+  <h5>🔷 BOAL (The Runtime Engine)</h5>
+  <p>BOAL is the execution kernel and interpreter system that powers BO42.</p>
+
+  <p>It provides:</p>
+  <ul>
+    <li>Lexer → Parser → AST → Runtime pipeline</li>
+    <li>Secure execution control (Control Plane)</li>
+    <li>Runtime Guard Firewall (security enforcement layer)</li>
+    <li>Network attribution validation system</li>
+    <li>Trace-based execution observability (BO42TraceEngine)</li>
+  </ul>
+
+  <h5>🔷 High Intelligence Security (HIS)</h5>
   <p>
-    BOAL executes BO42 programs through a full pipeline:
+    HIS (High Intelligence Security) is a pioneering AI security and intelligence organization
+    focused on next-generation global systems.
   </p>
 
-  <pre>
-Lexer → Parser → AST → Control Plane → Execution Engine → Trace System
-  </pre>
-</section>
-
-<!-- GET STARTED -->
-<section id="get-started" class="hero">
-  <h2>🚀 Get Started</h2>
-
-  <h5>Install BOAL</h5>
-  <pre>pip install boal-bo42</pre>
-
-  <h5>Run a BO42 file</h5>
-  <pre>boal run main.bo42</pre>
-
-  <h5>Run with trace debugging</h5>
-  <pre>boal run main.bo42 --trace</pre>
-</section>
-
-<!-- SYNTAX -->
-<section id="syntax" class="hero">
-  <h2>🧠 BO42 Syntax</h2>
-
-  <p>BO42 uses structured execution blocks:</p>
-
-  <h5>Basic Structure</h5>
-  <pre>
-ce {
-    ci compute {
-        attr x = valid;
-        attr y = verified;
-    }
-}
-  </pre>
-
-  <h5>Key Components</h5>
+  <p><b>Core Focus Areas:</b></p>
   <ul>
-    <li><b>ce</b> → Control Execution root block</li>
-    <li><b>ci</b> → Computational Instruction block</li>
-    <li><b>attr</b> → Execution attribute layer</li>
-    <li><b>verify</b> → Security validation instruction</li>
+    <li>AI-powered security infrastructure</li>
+    <li>Global economic stability systems</li>
+    <li>Adaptive threat intelligence</li>
+    <li>Social engineering defense systems</li>
+    <li>Secure distributed intelligence frameworks</li>
   </ul>
+
+  <hr>
+
+  <h2>🌐 Vision</h2>
+  <p>
+    To build a world where advanced intelligence systems and human reasoning converge
+    to create safer, more stable, and more resilient global infrastructure.
+  </p>
+
+  <h2>🏛️ Current Mission Phase</h2>
+  <ul>
+    <li>Strategic partnerships</li>
+    <li>Media & global awareness campaigns</li>
+    <li>Infrastructure development</li>
+    <li>AI research scaling</li>
+    <li>Ecosystem deployment (BOAL / BO42)</li>
+  </ul>
+
+  <hr>
+
+  <h2>🤝 Contributors & Recognition</h2>
+  <p><b>Hezomol-SK Global Solutions Nigeria Limited</b></p>
+  <p>
+    A contributing partner supporting infrastructure and material development for the BOAL and BO42 ecosystem.
+  </p>
+
+  <hr>
+
+  <h2>💡 Funding Model</h2>
+  <p>
+    BOAL and BO42 operate under a mission-driven donation-based model.
+  </p>
+
+  <p><b>Focus:</b> Research • Security • Open Intelligence Development • Global Impact Systems</p>
+
+  <h5>🤝 Support the Project</h5>
+  <ul>
+    <li>AI research & development</li>
+    <li>Infrastructure scaling</li>
+    <li>Open-source distribution</li>
+    <li>Security framework expansion</li>
+  </ul>
+
+  <p>
+    ⚠️ Sensitive financial details are intentionally not publicly exposed in this repository for security reasons.
+  </p>
+
+  <hr>
+
+  <h2>🔐 Mission Statement</h2>
+  <p>
+    <b>
+      “The advancement of secure intelligence systems for global stability and structured computational reasoning.”
+    </b>
+  </p>
+
+  <p>
+    Dedicated to God Almighty (the Heavenly Father) and the mission of building
+    an intelligence-driven execution framework for global impact.
+  </p>
+
+  <hr>
+
+  <h2>👥 HIS Executive Structure</h2>
+  <ul>
+    <li>System architecture</li>
+    <li>AI security governance</li>
+    <li>Runtime engineering</li>
+    <li>Funding strategy</li>
+    <li>Research direction</li>
+    <li>Global expansion planning</li>
+  </ul>
+
+  <hr>
+
+  <h2>🚀 BOAL Core Features</h2>
+  <ul>
+    <li>⚙️ High-performance interpreter engine</li>
+    <li>🔐 Guard-based execution firewall</li>
+    <li>🧠 AI-aware runtime tracing system</li>
+    <li>🌐 Network attribution validation layer</li>
+    <li>🧩 Modular CI execution blocks</li>
+    <li>📊 Full execution trace observability (BO42TraceEngine)</li>
+  </ul>
+
+  <h2>📦 Use Cases</h2>
+  <ul>
+    <li>AI execution pipelines</li>
+    <li>Secure computation systems</li>
+    <li>Research-grade runtime environments</li>
+    <li>Distributed intelligence frameworks</li>
+    <li>High-security automation systems</li>
+  </ul>
+
+  <h2>📈 SEO KEYWORDS (PyPI OPTIMIZED)</h2>
+  <ul>
+    <li>BO42 programming language</li>
+    <li>BOAL runtime system</li>
+    <li>AI execution kernel</li>
+    <li>secure interpreter system</li>
+    <li>Python AI runtime engine</li>
+    <li>execution tracing system</li>
+    <li>control plane architecture</li>
+    <li>AI security framework</li>
+    <li>deterministic runtime engine</li>
+  </ul>
+
+  <hr>
+
+  <h2>⚠️ Project Status</h2>
+  <ul>
+    <li>🟢 Active Development</li>
+    <li>🟡 Pre-production ecosystem</li>
+    <li>🔵 PyPI released core runtime</li>
+    <li>🔒 Security-first architecture</li>
+  </ul>
+
+  <h2>🤝 Get Involved</h2>
+  <ul>
+    <li>Developers</li>
+    <li>AI researchers</li>
+    <li>Security engineers</li>
+    <li>System architects</li>
+    <li>Strategic contributors</li>
+  </ul>
+
+  <h2>📬 Collaboration</h2>
+  <p>
+    For enterprise collaboration, research integration, or partnerships, please contact the official project maintainers.
+  </p>
+
+  <h2>🌐 Documentation</h2>
+  <p>
+    📘 Official Docs:
+    <a href="https://officialjoemayami.github.io/BOAL-BO42/" target="_blank">
+      BOAL Documentation Site
+    </a>
+  </p>
+
 </section>
-
-<!-- OUTPUT -->
-<section id="output" class="hero">
-  <h2>📤 Output Execution Example</h2>
-
-  <p>BO42 programs execute deterministically through BOAL runtime.</p>
-
-  <h5>Hello World Equivalent</h5>
-  <p>BO42 does not use traditional print statements. Instead, CI execution outputs controlled responses.</p>
-
-  <h5>Example Program</h5>
-  <pre>
-ce {
-    ci output {
-        message = "Halleluyah!";
-    }
-}
-  </pre>
-
-  <h5>Expected Output</h5>
-  <pre>
-Halleluyah!
-  </pre>
-</section>
-
-<footer class="text-center text-muted mt-4">
-  <p>© BOAL Runtime System • High Intelligence Security (HIS)</p>
-</footer>
-
-</div>
-
-</body>
-</html>

@@ -4,7 +4,7 @@
 ![BO42](https://img.shields.io/badge/BO42-Language%20Engine-black?style=for-the-badge)
 ![PyPI](https://img.shields.io/badge/PyPI-ready-green?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)
-
+[![Docs](https://img.shields.io/badge/docs-BOAL%20BO42-blue)](https://officialjoemayami.github.io/BOAL-BO42/)
 ---
 
 ## 🌐 Overview
